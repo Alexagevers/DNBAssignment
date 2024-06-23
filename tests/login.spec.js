@@ -3,12 +3,9 @@ const { test, expect } = require('@playwright/test');
 
 
 test('has title', async ({ page }) => {
-  //await page.goto('file://C:/Users/alexa/Documents/ABN%20Assessment/testautomation-web/index.html');
-  await page.goto('file://C:/Users/alexa/Projects/ABNAssignment/AbnAssignment/application/index.html')
-
-
-  // Expect a title "to contain" a substring.
+  await page.goto('file://C:/Users/alexa/Desktop/application/index.html');
   await expect(page).toHaveTitle("Single Page Application");
+
 });
 
 //test('get started link', async ({ page }) => {
@@ -20,3 +17,5 @@ test('has title', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
 //  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 //});
+
+"C:\Users\alexa\Desktop\application"
